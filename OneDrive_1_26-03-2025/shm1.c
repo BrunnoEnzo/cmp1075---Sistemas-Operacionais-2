@@ -6,10 +6,9 @@
 
 #include <sys/shm.h> // Para manipulação de memória compartilhada
 
-#include "shm_com.h" // Cabeçalho personalizado (não fornecido)
-
 #include <sys/sem.h> // Para manipulação de semáforos
 #include "semun.h"   // Definição da união semun (não fornecida)
+#define TEXT_SZ 2048
 
 // Declaração de funções auxiliares para manipulação de semáforos
 static int set_semvalue(int);

@@ -9,8 +9,8 @@
 #include <sys/shm.h>  // Para memória compartilhada
 #include <sys/sem.h>  // Para semáforos
 
-#include "shm_com.h"  // Arquivo de cabeçalho para memória compartilhada
 #include "semun.h"    // Arquivo de cabeçalho para manipulação de semáforos
+#define TEXT_SZ 2048
 
 // Declaração de funções auxiliares para manipulação de semáforos
 static int set_semvalue(int);
